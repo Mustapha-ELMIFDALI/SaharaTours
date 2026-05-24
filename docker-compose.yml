@@ -1,0 +1,97 @@
+version: '3.9'
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SaharaTours – Docker Compose
+#
+# Usage:
+#   docker compose up --build          → start all services
+#   docker compose --profile tools up  → also start phpMyAdmin
+#   docker compose down -v             → stop + remove volumes
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── MySQL 8 ────────────────────────────────────────────────────────────────
+  mysql:
+    image: mysql:8.0
+    container_name: saharatours-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: saharatours_db
+    ports:
+      - "3307:3306"          # 3307 on host → won't conflict with local MySQL
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-prootpassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    networks:
+      - saharatours-net
+
+  # ── Spring Boot backend ────────────────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: saharatours-backend
+    restart: unless-stopped
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/saharatours_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: rootpassword
+      JWT_SECRET: c2FoYXJhdG91cnMtc2VjcmV0LWtleS1mb3Itand0LWF1dGhlbnRpY2F0aW9uLTIwMjQ=
+      JWT_EXPIRATION: 86400000
+    ports:
+      - "8080:8080"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - saharatours-net
+
+  # ── React + Nginx frontend ─────────────────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: saharatours-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - saharatours-net
+
+  # ── phpMyAdmin (optional – activate with: --profile tools) ─────────────────
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: saharatours-phpmyadmin
+    profiles:
+      - tools
+    restart: unless-stopped
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword
+    ports:
+      - "8081:80"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - saharatours-net
+
+# ─────────────────────────────────────────────────────────────────────────────
+volumes:
+  mysql_data:
+
+networks:
+  saharatours-net:
+    driver: bridge
