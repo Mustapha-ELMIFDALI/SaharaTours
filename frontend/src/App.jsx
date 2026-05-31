@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
 import { AuthProvider } from './context/AuthContext'
+import ErrorBoundary from './components/ui/ErrorBoundary'
+import { ToastProvider } from './components/ui/Toast'
 import Layout from './components/layout/Layout'
 import AdminLayout from './components/admin/AdminLayout'
 import ProtectedRoute from './components/auth/ProtectedRoute'
@@ -21,9 +23,11 @@ import ReservationsAdmin from './pages/admin/ReservationsAdmin'
 
 export default function App() {
   return (
+    <ErrorBoundary>
     <BrowserRouter>
       <ThemeProvider>
         <AuthProvider>
+        <ToastProvider>
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Home />} />
@@ -48,8 +52,10 @@ export default function App() {
             </Route>
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
+        </ToastProvider>
         </AuthProvider>
       </ThemeProvider>
     </BrowserRouter>
+    </ErrorBoundary>
   )
 }
