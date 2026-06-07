@@ -4,11 +4,9 @@
 
 <br/>
 
-<table>
-<tr><td align="center" bgcolor="#ffffff">
-  <img src="enset_mohammedia.png" alt="ENSET Mohammedia — École Normale Supérieure de l'Enseignement Technique" width="260"/>
-</td></tr>
-</table>
+<a href="./enset_mohammedia.png">
+  <img src="./enset_mohammedia.png" alt="ENSET Mohammedia — École Normale Supérieure de l'Enseignement Technique" width="260" />
+</a>
 
 <br/>
 
