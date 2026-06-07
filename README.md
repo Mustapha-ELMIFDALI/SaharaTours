@@ -1,53 +1,30 @@
-<div align="center">
+![SaharaTours Banner](https://capsule-render.vercel.app/api?type=waving&color=0:F97316,50:EA580C,100:7C3AED&height=160&section=header&text=SaharaTours&fontSize=52&fontColor=ffffff&fontAlignY=40&desc=Plateforme%20intelligente%20de%20Gestion%20des%20R%C3%A9servations%20Touristiques&descAlignY=62&descSize=18&animation=fadeIn)
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:F97316,50:EA580C,100:7C3AED&height=160&section=header&text=SaharaTours&fontSize=52&fontColor=ffffff&fontAlignY=40&desc=Plateforme%20intelligente%20de%20Gestion%20des%20R%C3%A9servations%20Touristiques&descAlignY=62&descSize=18&animation=fadeIn"/>
+![ENSET Mohammedia](./enset_mohammedia.png)
 
-<br/>
+![Projet académique](https://img.shields.io/badge/%F0%9F%8F%9C%EF%B8%8F%20PROJET%20ACAD%C3%89MIQUE-ENSET%20MOHAMMEDIA%20%E2%80%A2%202025%2F2026-1f2937?style=for-the-badge&labelColor=ea580c)
 
-<a href="./enset_mohammedia.png">
-  <img src="./enset_mohammedia.png" alt="ENSET Mohammedia — École Normale Supérieure de l'Enseignement Technique" width="260" />
-</a>
+### 🏜️ SaharaTours
 
-<br/>
+*Une plateforme full-stack moderne qui digitalise la réservation d'activités et de transports touristiques au Maroc, enrichie d'un chatbot IA propulsé par Google Gemini 2.5.*
 
-<img src="https://img.shields.io/badge/%F0%9F%8F%9C%EF%B8%8F%20PROJET%20ACAD%C3%89MIQUE-ENSET%20MOHAMMEDIA%20%E2%80%A2%202025%2F2026-1f2937?style=for-the-badge&labelColor=ea580c" />
+![React](https://img.shields.io/badge/React-19-149ECA?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.2-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-<h3>🏜️ <strong>SaharaTours</strong></h3>
+![JWT](https://img.shields.io/badge/JWT-Security-D63AFF?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-2.5_AI-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-ready-009639?style=flat-square&logo=nginx&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Tests](https://img.shields.io/badge/Tests-JUnit5_·_Vitest_·_Mockito-25A162?style=flat-square&logo=vitest&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-F2C811?style=flat-square)
 
-<p>
-  <em>Une plateforme full-stack moderne qui digitalise la réservation d'activités et de transports touristiques au Maroc,<br/>enrichie d'un chatbot IA propulsé par Google Gemini 2.5.</em>
-</p>
+[Aperçu](#-aperçu) • [Fonctionnalités](#-fonctionnalités) • [Stack technique](#%EF%B8%8F-architecture--stack-technique) • [Démarrage rapide](#-démarrage-rapide) • [Docker](#-déploiement-docker) • [UML](#%EF%B8%8F-modélisation-uml) • [Équipe](#-équipe--encadrement)
 
-<p>
-  <img src="https://img.shields.io/badge/React-19-149ECA?style=for-the-badge&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring_Boot-3.2-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-</p>
-<p>
-  <img src="https://img.shields.io/badge/JWT-Security-D63AFF?style=flat-square&logo=jsonwebtokens&logoColor=white" />
-  <img src="https://img.shields.io/badge/Gemini-2.5_AI-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nginx-ready-009639?style=flat-square&logo=nginx&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-CI-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tests-JUnit5_·_Vitest_·_Mockito-25A162?style=flat-square&logo=vitest&logoColor=white" />
-  <img src="https://img.shields.io/badge/license-MIT-F2C811?style=flat-square" />
-</p>
-
-<p>
-  <a href="#-aperçu">Aperçu</a> •
-  <a href="#-fonctionnalités">Fonctionnalités</a> •
-  <a href="#%EF%B8%8F-architecture--stack-technique">Stack technique</a> •
-  <a href="#-démarrage-rapide">Démarrage rapide</a> •
-  <a href="#-déploiement-docker">Docker</a> •
-  <a href="#-modélisation-uml">UML</a> •
-  <a href="#-équipe--encadrement">Équipe</a>
-</p>
-
-</div>
-
-<br/>
+---
 
 > [!NOTE]
 > Ce projet a été réalisé dans le cadre d'un projet académique à **l'ENSET de Mohammedia**, sous l'encadrement du **Prof. Oumayma Agherai**.
@@ -299,47 +276,26 @@ SaharaTours/
 
 ## 👥 Équipe & Encadrement
 
-<div align="center">
-
 ### 🎓 Réalisé par
 
-<table>
-  <tr>
-    <td align="center" width="220">
-      <img src="https://img.shields.io/badge/-ELMIFDALI%20MUSTAPHA-EA580C?style=for-the-badge&logo=github&logoColor=white" /><br/>
-      <sub><strong>Backend · Sécurité JWT · IA · DevOps</strong></sub>
-    </td>
-    <td align="center" width="220">
-      <img src="https://img.shields.io/badge/-MOUSSNAOUI%20ILYAS-2563EB?style=for-the-badge&logo=github&logoColor=white" /><br/>
-      <sub><strong>Architecture · Technologies</strong></sub>
-    </td>
-    <td align="center" width="220">
-      <img src="https://img.shields.io/badge/-OUAOUACHE%20HICHAM-16A34A?style=for-the-badge&logo=github&logoColor=white" /><br/>
-      <sub><strong>Cahier des charges · Conception</strong></sub>
-    </td>
-  </tr>
-</table>
+| ![Mustapha](https://img.shields.io/badge/-ELMIFDALI%20MUSTAPHA-EA580C?style=for-the-badge&logo=github&logoColor=white) | ![Ilyas](https://img.shields.io/badge/-MOUSSNAOUI%20ILYAS-2563EB?style=for-the-badge&logo=github&logoColor=white) | ![Hicham](https://img.shields.io/badge/-OUAOUACHE%20HICHAM-16A34A?style=for-the-badge&logo=github&logoColor=white) |
+|:---:|:---:|:---:|
+| Backend · Sécurité JWT · IA · DevOps | Architecture · Technologies | Cahier des charges · Conception |
 
 ### 🧑‍🏫 Encadré par
 
-<img src="https://img.shields.io/badge/Prof.%20OUMAYMA%20AGHERAI-Encadrante-7C3AED?style=for-the-badge&logo=googlescholar&logoColor=white" />
-
-</div>
+![Encadrante](https://img.shields.io/badge/Prof.%20OUMAYMA%20AGHERAI-Encadrante-7C3AED?style=for-the-badge&logo=googlescholar&logoColor=white)
 
 ---
 
 ## 📄 Licence
 
-<img src="https://img.shields.io/badge/Licence-MIT-F2C811?style=for-the-badge&labelColor=1f2937" />
+![MIT License](https://img.shields.io/badge/Licence-MIT-F2C811?style=for-the-badge&labelColor=1f2937)
 
 Ce projet est distribué sous licence **MIT** — voir le fichier [`LICENSE`](LICENSE) pour plus de détails.
 
-<br/>
+---
 
-<div align="center">
+✨ **Réalisé avec passion à l'ENSET de Mohammedia** · 🇲🇦 **Made in Morocco** · 🌴 **2025/2026** ✨
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:EA580C,100:F97316&height=120&section=footer&animation=fadeIn"/>
-
-✨ &nbsp;**Réalisé avec passion à l'ENSET de Mohammedia** &nbsp;·&nbsp; 🇲🇦 &nbsp;**Made in Morocco** &nbsp;·&nbsp; 🌴 **2025/2026** &nbsp;✨
-
-</div>
+![Footer wave](https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:EA580C,100:F97316&height=120&section=footer&animation=fadeIn)
