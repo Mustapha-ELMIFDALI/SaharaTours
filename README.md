@@ -1,10 +1,20 @@
 <div align="center">
 
-<img src="enset_mohammedia.png" alt="ENSET Mohammedia" width="120"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:F97316,50:EA580C,100:7C3AED&height=160&section=header&text=SaharaTours&fontSize=52&fontColor=ffffff&fontAlignY=40&desc=Plateforme%20intelligente%20de%20Gestion%20des%20R%C3%A9servations%20Touristiques&descAlignY=62&descSize=18&animation=fadeIn"/>
 
-# 🏜️ SaharaTours
+<br/>
 
-### *Plateforme intelligente de Gestion des Réservations Touristiques*
+<table>
+<tr><td align="center" bgcolor="#ffffff">
+  <img src="enset_mohammedia.png" alt="ENSET Mohammedia — École Normale Supérieure de l'Enseignement Technique" width="260"/>
+</td></tr>
+</table>
+
+<br/>
+
+<img src="https://img.shields.io/badge/%F0%9F%8F%9C%EF%B8%8F%20PROJET%20ACAD%C3%89MIQUE-ENSET%20MOHAMMEDIA%20%E2%80%A2%202025%2F2026-1f2937?style=for-the-badge&labelColor=ea580c" />
+
+<h3>🏜️ <strong>SaharaTours</strong></h3>
 
 <p>
   <em>Une plateforme full-stack moderne qui digitalise la réservation d'activités et de transports touristiques au Maroc,<br/>enrichie d'un chatbot IA propulsé par Google Gemini 2.5.</em>
@@ -295,13 +305,26 @@ SaharaTours/
 
 ### 🎓 Réalisé par
 
-| | | |
-|:---:|:---:|:---:|
-| 🟠 **ELMIFDALI MUSTAPHA** | 🔵 **MOUSSNAOUI ILYAS** | 🟢 **OUAOUACHE HICHAM** |
+<table>
+  <tr>
+    <td align="center" width="220">
+      <img src="https://img.shields.io/badge/-ELMIFDALI%20MUSTAPHA-EA580C?style=for-the-badge&logo=github&logoColor=white" /><br/>
+      <sub><strong>Backend · Sécurité JWT · IA · DevOps</strong></sub>
+    </td>
+    <td align="center" width="220">
+      <img src="https://img.shields.io/badge/-MOUSSNAOUI%20ILYAS-2563EB?style=for-the-badge&logo=github&logoColor=white" /><br/>
+      <sub><strong>Architecture · Technologies</strong></sub>
+    </td>
+    <td align="center" width="220">
+      <img src="https://img.shields.io/badge/-OUAOUACHE%20HICHAM-16A34A?style=for-the-badge&logo=github&logoColor=white" /><br/>
+      <sub><strong>Cahier des charges · Conception</strong></sub>
+    </td>
+  </tr>
+</table>
 
 ### 🧑‍🏫 Encadré par
 
-**Prof. OUMAYMA AGHERAI**
+<img src="https://img.shields.io/badge/Prof.%20OUMAYMA%20AGHERAI-Encadrante-7C3AED?style=for-the-badge&logo=googlescholar&logoColor=white" />
 
 </div>
 
@@ -309,12 +332,16 @@ SaharaTours/
 
 ## 📄 Licence
 
+<img src="https://img.shields.io/badge/Licence-MIT-F2C811?style=for-the-badge&labelColor=1f2937" />
+
 Ce projet est distribué sous licence **MIT** — voir le fichier [`LICENSE`](LICENSE) pour plus de détails.
 
----
+<br/>
 
 <div align="center">
 
-✨ *Réalisé avec passion à l'**ENSET de Mohammedia*** ✨
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,50:EA580C,100:F97316&height=120&section=footer&animation=fadeIn"/>
+
+✨ &nbsp;**Réalisé avec passion à l'ENSET de Mohammedia** &nbsp;·&nbsp; 🇲🇦 &nbsp;**Made in Morocco** &nbsp;·&nbsp; 🌴 **2025/2026** &nbsp;✨
 
 </div>
