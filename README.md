@@ -2,338 +2,319 @@
 
 <img src="enset_mohammedia.png" alt="ENSET Mohammedia" width="120"/>
 
-# 🌍 SaharaTours
+# 🏜️ SaharaTours
 
-**A full-stack Moroccan tourism platform powered by AI**
+### *Plateforme intelligente de Gestion des Réservations Touristiques*
 
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-brightgreen?style=flat-square&logo=springboot)
-![React](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)
-![Vite](https://img.shields.io/badge/Vite-5-purple?style=flat-square&logo=vite)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8?style=flat-square&logo=tailwindcss)
-![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=flat-square&logo=docker)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991?style=flat-square&logo=openai)
-![License](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)
+<p>
+  <em>Une plateforme full-stack moderne qui digitalise la réservation d'activités et de transports touristiques au Maroc,<br/>enrichie d'un chatbot IA propulsé par Google Gemini 2.5.</em>
+</p>
 
-[Features](#-features) • [Tech Stack](#-tech-stack) • [Getting Started](#-getting-started) • [API](#-api-documentation) • [Docker](#-docker-deployment) • [Team](#-team)
+<p>
+  <img src="https://img.shields.io/badge/React-19-149ECA?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Boot-3.2-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+</p>
+<p>
+  <img src="https://img.shields.io/badge/JWT-Security-D63AFF?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+  <img src="https://img.shields.io/badge/Gemini-2.5_AI-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nginx-ready-009639?style=flat-square&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-CI-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tests-JUnit5_·_Vitest_·_Mockito-25A162?style=flat-square&logo=vitest&logoColor=white" />
+  <img src="https://img.shields.io/badge/license-MIT-F2C811?style=flat-square" />
+</p>
+
+<p>
+  <a href="#-aperçu">Aperçu</a> •
+  <a href="#-fonctionnalités">Fonctionnalités</a> •
+  <a href="#%EF%B8%8F-architecture--stack-technique">Stack technique</a> •
+  <a href="#-démarrage-rapide">Démarrage rapide</a> •
+  <a href="#-déploiement-docker">Docker</a> •
+  <a href="#-modélisation-uml">UML</a> •
+  <a href="#-équipe--encadrement">Équipe</a>
+</p>
 
 </div>
 
----
+<br/>
 
-## 📖 Overview
-
-**SaharaTours** is a modern, full-stack web application for discovering and booking authentic Moroccan tours.
-It combines a robust **Spring Boot REST API** with a reactive **React + Vite** frontend, and integrates **OpenAI GPT-4o** to deliver AI-powered travel recommendations, a smart customer-support chatbot, automatic tour-description generation, and sentiment analysis on customer reviews.
+> [!NOTE]
+> Ce projet a été réalisé dans le cadre d'un projet académique à **l'ENSET de Mohammedia**, sous l'encadrement du **Prof. Oumayma Agherai**.
 
 ---
 
-## ✨ Features
+## 🌍 Aperçu
 
-### 🧳 Core Features
-- 🔍 **Tour Discovery** — browse, search and filter tours by category, region, price and duration
-- 📅 **Booking System** — real-time availability check, date selection and booking management
-- 💳 **Online Payment** — secure checkout via Stripe integration
-- ⭐ **Reviews & Ratings** — verified review system with AI sentiment analysis
-- 📧 **Email Notifications** — automatic booking confirmation and reminder emails
+**SaharaTours** est une plateforme web qui répond à un constat simple : le marché marocain du tourisme manque d'outils numériques modernes — les agences locales s'appuient encore sur des tableurs et des appels téléphoniques, ce qui génère inefficacités, doublons et une expérience client en deçà des attentes actuelles.
 
-### 🔐 Authentication & Security
-- JWT-based authentication (access + refresh tokens)
-- Role-based access control — `ROLE_USER` / `ROLE_ADMIN`
-- Password encryption with BCrypt
-- Stateless Spring Security configuration
+SaharaTours propose une solution complète et **clé en main** :
 
-### 🤖 AI Features (OpenAI GPT-4o)
-- **AI Travel Recommendations** — personalised tour suggestions based on user preferences
-- **AI Chatbot** — floating 24/7 customer-support widget
-- **AI Description Generator** — one-click tour description writing in the admin panel
-- **Sentiment Analysis** — automatic classification of customer reviews
-- **AI Itinerary Builder** — multi-day travel plan generation on demand
-
-### 🛠️ Admin Dashboard
-- Full CRUD for tours, bookings and users
-- Revenue analytics and booking statistics
-- Image upload with Cloudinary CDN
-- AI content generation tools
+| 🔐 Authentification sécurisée | 🗺️ Catalogue riche | 🤖 Chatbot intelligent |
+|:---:|:---:|:---:|
+| Sessions protégées par **JWT** lors de l'inscription et de la connexion | **25 activités** et **18 options de transport** à explorer et filtrer | Assistant **Gemini 2.5** disponible **24h/24** pour guider les clients |
 
 ---
 
-## 🏗️ Tech Stack
+## ✨ Fonctionnalités
 
-### Backend
-| Technology | Version | Purpose |
-|---|---|---|
-| Java | 17 | Language |
-| Spring Boot | 3.2 | Application framework |
-| Spring Security | 6 | Auth & authorisation |
-| Spring Data JPA | 3.2 | ORM / database access |
-| MySQL | 8.0 | Relational database |
-| JWT (jjwt) | 0.12 | Token-based auth |
-| Stripe Java SDK | 24 | Payment processing |
-| JavaMailSender | — | Email notifications |
-| OpenAI Java SDK | — | AI integration |
-| Maven | 3.9 | Build tool |
+### 🧑‍🤝‍🧑 Côté Visiteur & Client
+- 🔍 Parcourir et **filtrer le catalogue d'activités** (catégorie, difficulté, prix, lieu)
+- 📄 Consulter les **fiches détaillées** des activités et des transports
+- 📝 **S'inscrire / se connecter** via une authentification sécurisée par JWT
+- 🎟️ **Réserver une activité** et/ou **un transport**, choisir une date et un nombre de participants
+- 📋 **Suivre, modifier ou annuler** ses réservations en temps réel
+- 👤 **Gérer son profil** (informations personnelles, mot de passe)
+- 💬 Discuter avec **Sahara**, le chatbot IA, pour des recommandations et un suivi personnalisé
 
-### Frontend
-| Technology | Version | Purpose |
-|---|---|---|
-| React | 18 | UI library |
-| Vite | 5 | Build tool & dev server |
-| Tailwind CSS | 3 | Utility-first styling |
-| React Router | 6 | Client-side routing |
-| Axios | 1.6 | HTTP client |
-| React Query | 5 | Server-state management |
-| React Hook Form | 7 | Form handling & validation |
-| Framer Motion | 11 | Animations |
+### 🛠️ Côté Administrateur
+- 📊 **Tableau de bord** avec statistiques et graphiques dynamiques (Recharts)
+- ✅ Gestion **CRUD complète** des activités, des transports et des réservations
+- 👥 Gestion des **utilisateurs et des rôles**
+- 🔄 Mise à jour en temps réel du **statut des réservations**
 
-### Infrastructure
-| Technology | Purpose |
+### 🤖 Intelligence Artificielle (Gemini 2.5)
+- Réponses **contextualisées** basées sur le catalogue réel (activités, transports, tarifs)
+- Recommandations personnalisées pour les clients connectés
+- Suivi conversationnel des réservations du client (statut, historique)
+- Disponible en accès libre **et** en mode personnalisé une fois authentifié
+
+---
+
+## 🏗️ Architecture & Stack technique
+
+<table>
+<tr>
+<td valign="top" width="33%">
+
+### 🎨 Frontend
+| Technologie | Rôle |
 |---|---|
-| Docker + Docker Compose | Containerised deployment |
-| Cloudinary | Image storage & CDN |
-| OpenAI GPT-4o | AI features |
-| Stripe | Payment gateway |
+| ⚛️ **React 19** | Librairie UI |
+| ⚡ **Vite 5** | Build & dev server |
+| 🎨 **Tailwind CSS v4** | Styling utilitaire |
+| 🧭 **React Router** | Routage SPA |
+| 🌐 **Axios** | Client HTTP |
+| 📈 **Recharts** | Graphiques du dashboard |
+| 🧠 **Context API** | Gestion d'état globale |
+
+</td>
+<td valign="top" width="33%">
+
+### ⚙️ Backend
+| Technologie | Rôle |
+|---|---|
+| 🍃 **Spring Boot 3.2** | Framework applicatif |
+| 🔒 **Spring Security** | Authentification & rôles |
+| 🔑 **JWT (JJWT)** | Jetons d'accès sécurisés |
+| 🗄️ **JPA / Hibernate** | ORM & persistance |
+| 📦 **Maven** | Gestion de build |
+| ✂️ **Lombok** | Réduction du boilerplate |
+
+</td>
+<td valign="top" width="33%">
+
+### 🚀 Données, Tests & DevOps
+| Technologie | Rôle |
+|---|---|
+| 🐬 **MySQL 8** | Base de données relationnelle |
+| 🐳 **Docker Compose** | Orchestration des services |
+| 🌐 **Nginx** | Serveur frontend / reverse proxy |
+| 🔁 **GitHub Actions** | Intégration continue (CI) |
+| 🧪 **JUnit 5 / Mockito** | Tests backend |
+| 🧪 **Vitest** | Tests frontend |
+| ✨ **Gemini 2.5 AI** | Chatbot intelligent |
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Démarrage rapide
 
-### Prerequisites
-- Java 17+
-- Node.js 20+
-- MySQL 8.0+
-- Docker & Docker Compose *(optional)*
-- An OpenAI API key
-- A Stripe account (test keys are fine)
+### ✅ Prérequis
+- ☕ Java 17+
+- 🟢 Node.js 20+
+- 🐬 MySQL 8+
+- 🐳 Docker & Docker Compose *(optionnel — voir [section Docker](#-déploiement-docker))*
+- 🔑 Une clé API **Google Gemini** ([Google AI Studio](https://aistudio.google.com/app/apikey))
 
----
-
-### 1 · Clone the repository
-
+### 1️⃣ Cloner le dépôt
 ```bash
 git clone https://github.com/Mustapha-ELMIFDALI/SaharaTours.git
 cd SaharaTours
 ```
 
----
-
-### 2 · Backend Setup
-
-#### Create the database
-```sql
-CREATE DATABASE saharatours;
+### 2️⃣ Configurer et lancer le backend
+```bash
+cd backend
 ```
 
-#### Configure environment variables
-
 ```yaml
-# backend/src/main/resources/application.yml
+# src/main/resources/application.yml
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/saharatours
-    username: YOUR_DB_USER
+    url: jdbc:mysql://localhost:3306/saharatours_db?createDatabaseIfNotExist=true
+    username: root
     password: YOUR_DB_PASSWORD
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: false
 
 app:
   jwt:
-    secret: YOUR_JWT_SECRET_MIN_32_CHARS
+    secret: YOUR_JWT_SECRET_BASE64_MIN_32_CHARS
     expiration-ms: 86400000
-    refresh-expiration-ms: 604800000
-
-openai:
-  api-key: YOUR_OPENAI_API_KEY
-  model: gpt-4o
-
-stripe:
-  secret-key: sk_test_YOUR_STRIPE_SECRET_KEY
-  webhook-secret: whsec_YOUR_WEBHOOK_SECRET
-
-spring:
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: YOUR_EMAIL@gmail.com
-    password: YOUR_APP_PASSWORD
-
-cloudinary:
-  cloud-name: YOUR_CLOUD_NAME
-  api-key: YOUR_CLOUDINARY_KEY
-  api-secret: YOUR_CLOUDINARY_SECRET
 ```
 
-#### Run the backend
-
 ```bash
-cd backend
 mvn spring-boot:run
 ```
+> 🟢 API disponible sur **http://localhost:8080**
 
-> API available at **http://localhost:8080**
+> 💡 Pour précharger des données de démonstration : `mysql -u root -p saharatours_db < data_seed.sql`
 
-#### Seed sample data *(optional)*
-
-```bash
-mysql -u root -p saharatours < data_seed.sql
-```
-
----
-
-### 3 · Frontend Setup
-
+### 3️⃣ Configurer et lancer le frontend
 ```bash
 cd frontend
 cp .env.example .env.local
 ```
 
 ```env
+# .env.local
 VITE_API_BASE_URL=http://localhost:8080/api
-VITE_STRIPE_PUBLIC_KEY=pk_test_YOUR_STRIPE_PUBLIC_KEY
+VITE_GEMINI_API_KEY=YOUR_GOOGLE_GEMINI_API_KEY
 ```
 
 ```bash
 npm install
 npm run dev
 ```
-
-> App available at **http://localhost:5173**
+> 🟢 Application disponible sur **http://localhost:5173**
 
 ---
 
-## 🐳 Docker Deployment
+## 🐳 Déploiement Docker
+
+Toute la stack (MySQL · Backend Spring Boot · Frontend React/Nginx) est orchestrée via **Docker Compose**.
 
 ```bash
-# Build and start all services
-docker-compose up --build
+# Construire et démarrer tous les services
+docker compose up --build
 
-# Detached mode
-docker-compose up -d --build
+# En arrière-plan
+docker compose up -d --build
 
-# Stop
-docker-compose down
+# Avec phpMyAdmin (outil d'administration MySQL)
+docker compose --profile tools up
+
+# Tout arrêter (et supprimer les volumes)
+docker compose down -v
 ```
 
-| Service | Port |
+| Service | Conteneur | Port hôte | Description |
+|---|---|:---:|---|
+| 🌐 Frontend | `saharatours-frontend` | `80` | React buildé, servi par Nginx |
+| ⚙️ Backend | `saharatours-backend` | `8080` | API REST Spring Boot |
+| 🐬 MySQL | `saharatours-mysql` | `3307` | Base de données |
+| 🛠️ phpMyAdmin | `saharatours-phpmyadmin` | `8081` | *(profil `tools`, optionnel)* |
+
+---
+
+## 🧪 Tests & Qualité
+
+```bash
+# Backend — JUnit 5 + Mockito
+cd backend && mvn test
+
+# Frontend — Vitest
+cd frontend && npm run test
+```
+
+Le pipeline **GitHub Actions** exécute automatiquement les suites de tests backend et frontend à chaque push / pull request.
+
+---
+
+## 🗺️ Modélisation UML
+
+La conception fonctionnelle du système s'appuie sur une **modélisation UML** complète :
+
+- 📐 **Diagramme des cas d'utilisation** — trois niveaux d'accès :
+  - 👤 **Visiteur** *(public)* : consulter le catalogue, filtrer, voir le détail d'une activité, s'inscrire, se connecter
+  - 🧳 **Client** *(authentifié, hérite du visiteur)* : réserver une activité / un transport, suivre ses réservations, les annuler, gérer son profil, utiliser le chatbot IA
+  - 🛡️ **Administrateur** *(accès complet)* : gestion CRUD des activités, transports, réservations et utilisateurs, accès au tableau de bord
+- 🧩 **Diagramme de classes** — entités `Utilisateur`, `Activité`, `Transport`, `Réservation` et leurs relations, base du schéma relationnel et des entités JPA
+
+---
+
+## 🧭 Défis techniques relevés
+
+| Défi | Description |
 |---|---|
-| Frontend (React) | `5173` |
-| Backend (Spring Boot) | `8080` |
-| MySQL | `3306` |
+| 🌐 **CORS** | Résolution des blocages de requêtes entre le frontend et le backend |
+| 🗄️ **JPA / Relations** | Gestion fine des relations d'entités et du mapping objet-relationnel |
+| 🤖 **Gemini API (v1beta)** | Adaptation au format de requêtes spécifique et gestion du *thinking budget* du modèle |
+| 🔑 **JWT & Rôles** | Mise en place robuste de l'authentification et du contrôle d'accès basé sur les rôles |
+| 🎯 **Analyse métier** | Traduction des besoins du domaine touristique (réservations, activités, clients) en fonctionnalités concrètes |
 
 ---
 
-## 📡 API Documentation
+## 🔮 Perspectives — Vision v2.0
 
-Base URL: `http://localhost:8080/api`
-
-### Authentication
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `POST` | `/auth/register` | ❌ | Register a new user |
-| `POST` | `/auth/login` | ❌ | Login and receive JWT |
-| `POST` | `/auth/refresh` | ❌ | Refresh access token |
-| `POST` | `/auth/logout` | ✅ | Invalidate refresh token |
-
-### Tours
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `GET` | `/tours` | ❌ | List all tours (paginated) |
-| `GET` | `/tours/{id}` | ❌ | Get tour by ID |
-| `GET` | `/tours/search` | ❌ | Search & filter tours |
-| `POST` | `/tours` | 🔑 ADMIN | Create a new tour |
-| `PUT` | `/tours/{id}` | 🔑 ADMIN | Update a tour |
-| `DELETE` | `/tours/{id}` | 🔑 ADMIN | Delete a tour |
-
-### Bookings
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `GET` | `/bookings/my` | ✅ | Get current user bookings |
-| `POST` | `/bookings` | ✅ | Create a booking |
-| `PUT` | `/bookings/{id}/cancel` | ✅ | Cancel a booking |
-| `GET` | `/bookings` | 🔑 ADMIN | List all bookings |
-
-### Reviews
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `GET` | `/reviews/tour/{tourId}` | ❌ | Get reviews for a tour |
-| `POST` | `/reviews` | ✅ | Submit a review |
-| `DELETE` | `/reviews/{id}` | 🔑 ADMIN | Delete a review |
-
-### AI Endpoints
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `POST` | `/ai/chat` | ❌ | Chat with the AI assistant |
-| `POST` | `/ai/recommend` | ✅ | Get personalised recommendations |
-| `POST` | `/ai/generate-description` | 🔑 ADMIN | Generate tour description |
-| `POST` | `/ai/itinerary` | ✅ | Build a multi-day itinerary |
-| `GET` | `/ai/sentiment/{reviewId}` | 🔑 ADMIN | Analyse review sentiment |
+- 💳 **Paiement en ligne** — intégration Stripe / CMI Maroc
+- 📱 **Application mobile** — développement avec React Native
+- 🧩 **Architecture microservices** enrichie d'un moteur **d'IA de recommandation**
 
 ---
 
-## 🧪 Running Tests
-
-```bash
-# Backend
-cd backend
-mvn test
-
-# Frontend
-cd frontend
-npm run test
-```
-
----
-
-## 📁 Project Structure
+## 📁 Structure du projet
 
 ```
 SaharaTours/
-├── backend/
+├── backend/                  # API REST Spring Boot
+│   └── src/main/java/...     # Auth, Activités, Transports, Réservations, Utilisateurs
+├── frontend/                 # Application React + Vite
 │   └── src/
-│       ├── main/java/com/saharatours/
-│       │   ├── auth/           # JWT, filters, AuthController
-│       │   ├── user/           # User entity, service, controller
-│       │   ├── tour/           # Tour entity, service, controller
-│       │   ├── booking/        # Booking entity, service, controller
-│       │   ├── review/         # Review entity, service, controller
-│       │   ├── payment/        # Stripe integration
-│       │   ├── email/          # JavaMail notification service
-│       │   ├── ai/             # OpenAI integration & AI services
-│       │   └── config/         # Security, CORS, exception handler
-│       └── test/               # Unit & integration tests
-├── frontend/
-│   └── src/
-│       ├── components/         # Navbar, Footer, TourCard, AIChatbot
-│       ├── pages/              # HomePage, ToursPage, TourDetailPage ...
-│       ├── context/            # AuthContext, ThemeContext
-│       ├── hooks/              # useAuth, useTours, useBooking
-│       ├── services/           # Axios API calls
-│       └── utils/              # Helpers & constants
-├── docker-compose.yml
-├── data_seed.sql
-├── .gitignore
+│       ├── components/       # Composants réutilisables (UI, Chatbot, Layout...)
+│       ├── pages/            # Pages publiques, espace client & back-office admin
+│       ├── services/         # Appels API (Axios) & intégration Gemini
+│       └── data/             # Données de référence (catégories, mocks)
+├── docker-compose.yml        # Orchestration MySQL · Backend · Frontend · phpMyAdmin
+├── data_seed.sql             # Jeu de données de démonstration
 └── README.md
 ```
 
 ---
 
-## 👥 Team
+## 👥 Équipe & Encadrement
 
-| Name | GitHub | Role |
-|---|---|---|
-| **Mustapha ELMIFDALI** | [@Mustapha-ELMIFDALI](https://github.com/Mustapha-ELMIFDALI) | Project Lead · Backend · Auth · AI · DevOps |
-| **Hicham Ouaouache** | [@hichamouaouche](https://github.com/hichamouaouche) | Backend · Frontend |
-| **Ilyas Moussaoui** | [@moussIlyas](https://github.com/moussIlyas) | Backend · Frontend · Testing |
+<div align="center">
+
+### 🎓 Réalisé par
+
+| | | |
+|:---:|:---:|:---:|
+| 🟠 **ELMIFDALI MUSTAPHA** | 🔵 **MOUSSNAOUI ILYAS** | 🟢 **OUAOUACHE HICHAM** |
+
+### 🧑‍🏫 Encadré par
+
+**Prof. OUMAYMA AGHERAI**
+
+</div>
 
 ---
 
-## 📄 License
+## 📄 Licence
 
-This project is licensed under the **MIT License**.
+Ce projet est distribué sous licence **MIT** — voir le fichier [`LICENSE`](LICENSE) pour plus de détails.
 
 ---
 
 <div align="center">
-Made with ❤️ in Morocco &nbsp;·&nbsp; ENSET Mohammedia 2026
+
+✨ *Réalisé avec passion à l'**ENSET de Mohammedia*** ✨
+
 </div>
